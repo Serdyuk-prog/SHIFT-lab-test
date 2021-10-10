@@ -6,33 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="table-container">
         <div class="table-header">
-            <div class="headElement">Number</div>
-            <div class="headElement">Name</div>
-            <div class="headElement">Phone</div>
-            <div class="headElement">Date</div>
-            <div class="headElement">Company</div>
+            <div class="headElement">Сountry</div>
+            <div class="headElement">Сapital</div>
+            <div class="headElement">Population</div>
+            <div class="headElement">Currency</div>
+            <div class="headElement">Net average salary</div>
         </div>
         <div class="table-row">
-            <div data-label="Number">16910227-3118</div>
-            <div data-label="Name">Holmes</div>
-            <div data-label="Phone">(420) 462-6063</div>
-            <div data-label="Date">2005/12/08</div>
-            <div data-label="Company">Scelerisque Corp.</div>
+            <div data-label="Сountry"><img src="https://www.countryflags.io/cz/flat/16.png"><span> Czechia</span></div>
+            <div data-label="Сapital">Prague</div>
+            <div data-label="Population">10,467,628</div>
+            <div data-label="Currency">Kč koruna</div>
+            <div data-label="Net average salary">&#36;2,203</div>
         </div>
         <div class="table-row">
-            <div data-label="Number">16910227-3118</div>
-            <div data-label="Name">Holmes</div>
-            <div data-label="Phone">(420) 462-6063</div>
-            <div data-label="Date">2005/12/08</div>
-            <div data-label="Company">Scelerisque Corp.</div>
+            <div data-label="Сountry"><img src="https://www.countryflags.io/se/flat/16.png"><span> Sweden</span></div>
+            <div data-label="Сapital">Stockholm</div>
+            <div data-label="Population">10,080,000</div>
+            <div data-label="Currency">kr krona</div>
+            <div data-label="Net average salary">&#36;3,220</div>
+        </div>
+        <div class="table-row">
+            <div data-label="Сountry"><img src="https://www.countryflags.io/ee/flat/16.png"><span> Estonia</span></div>
+            <div data-label="Сapital">Tallinn</div>
+            <div data-label="Population">1,315,635</div>
+            <div data-label="Currency">&#8364; euro</div>
+            <div data-label="Net average salary">&#36;2,236</div>
+        </div>
+        <div class="table-row">
+            <div data-label="Сountry"><img src="https://www.countryflags.io/de/flat/16.png"><span> Germany</span></div>
+            <div data-label="Сapital">Berlin</div>
+            <div data-label="Population">83,149,300</div>
+            <div data-label="Currency">&#8364; euro</div>
+            <div data-label="Net average salary">&#36;3,411</div>
         </div>
     </div>
+    <div id="search">
+        <label for="search-input">Search by country:</label>
+        <input id="search-input" type="text" placeholder="Country name" name="search" autocomplete="off">
+        <button id="search-button"><i class=" fa fa-search"></i></button>
+    </div>
+    <div id="count">sdsdsdds 9</div>
+    <script src="app.js"></script>
 </body>
 
 </html>

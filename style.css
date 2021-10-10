@@ -4,51 +4,99 @@ body {
 
 div {
     box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: 5px;
 }
 
 .table-container {
     display: block;
     margin: 15% auto;
+    margin-bottom: 0;
     max-width: 1600px;
+    box-shadow: none;
+    /* border-left: 1px solid black; */
 }
 
 .table-header, .table-row {
     display: flex;
     flex-direction: row;
-    /* border-left: solid 1px black; */
+    box-shadow: none;
 }
 
-.table-header :first-child {
-    border-left: solid 1px black;
-}
 
 .table-header div{
-    border-top: solid 1px black;
+    /* border-top: solid 1px black; */
     background: #009485;
     color: #fff;
-}
-
-.table-row :first-child{
-    border-left: solid 1px black;
 }
 
 .table-row div{
     width: calc(100% / 5);
     text-align: center;
     padding: 0.5em 0.5em;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
+    /* border-right: solid 1px black;
+    border-bottom: solid 1px black; */
     overflow: hidden;
+    transition: 0.8s;
+}
+
+.table-row div:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .table-header div{
     width: calc(100% / 5);
     text-align: center;
     padding: 0.5em 0.5em;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
+    /* border-right: solid 1px black;
+    border-bottom: solid 1px black; */
 }
 
+#search{
+    box-shadow: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+} 
+
+#search-input{
+    width: 180px;
+    height: 1.5em;
+    border: none;
+    border-bottom: 2px solid #464D77;
+    outline: none;
+}
+
+#search-button {
+    color: white;
+    border: none;
+    background-color: #E94F37;
+    height: 2em;
+    width: 3.5em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#search-button:active{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#count{
+    display: none;
+    text-align: center;
+    background-color: #E36588;
+    color: white;; 
+    font-size: 2em;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+mark{
+    background-color: #E94F37;
+    color: white;
+}
 
 @media screen and (max-width: 420px) {
     .table-header{
@@ -61,91 +109,26 @@ div {
     .table-row div{
         width: 100%;
         text-align: start;
-        border-left: solid 1px black;
+        /* border-left: solid 1px black; */
     }
     .table-container{
        margin-right: 20px;
        margin-left: 20px;
+       border: none;
     }
     .table-row div:before {
         display: flex;
-        border-bottom: solid 1px black;
+        /* border-bottom: solid 1px black; */
         margin: -.5em -.5em .75em -.5em;
         padding: .5em;
         content: attr(data-label);
         color: #fff;
         background: #009485;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .flex-table {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    background: #fff;
-}
-.flex-table thead {
-    color: #fff;
-    background: #009485;
-}
-.flex-table thead tr,
-.flex-table tbody tr {
-    display: flex;
-}
-.flex-table tbody tr+tr {
-    border-top: 1px solid #ccc;
-}
-.flex-table thead tr th,
-.flex-table tbody tr td {
-    display: flex;
-    flex: 1;
-    padding: .5em;
-}
-@media screen and (max-width: 640px) {
-    .flex-table {
-        border: 0;
+    #search-input{
+        width: 90px;
     }
-    .flex-table thead {
-        display: none;
-    }
-    .flex-table tbody tr {
-        flex-direction: column;
-        margin: 1em;
-        border: 1px solid #ccc;
-    }
-    .flex-table tbody tr td {
-        flex-direction: column;
-    }
-    .flex-table tbody tr td+td {
-        border-top: 1px solid #ccc;
-    }
-    .flex-table tbody tr td:before {
-        display: flex;
-        align-items: center;
-        margin: -.5em -.5em .75em -.5em;
-        padding: .5em;
-        content: attr(data-label);
-        color: #fff;
-        background: #009485;
-    } */
+}
+
+
+
