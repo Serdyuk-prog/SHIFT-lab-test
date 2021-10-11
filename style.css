@@ -14,7 +14,6 @@ div {
     margin-bottom: 0;
     max-width: 1600px;
     box-shadow: none;
-    /* border-left: 1px solid black; */
 }
 
 .table-header, .table-row {
@@ -25,7 +24,6 @@ div {
 
 
 .table-header div{
-    /* border-top: solid 1px black; */
     background: #009485;
     color: #fff;
 }
@@ -34,8 +32,6 @@ div {
     width: calc(100% / 5);
     text-align: center;
     padding: 0.5em 0.5em;
-    /* border-right: solid 1px black;
-    border-bottom: solid 1px black; */
     overflow: hidden;
     transition: 0.8s;
 }
@@ -48,8 +44,6 @@ div {
     width: calc(100% / 5);
     text-align: center;
     padding: 0.5em 0.5em;
-    /* border-right: solid 1px black;
-    border-bottom: solid 1px black; */
 }
 
 #search{
@@ -87,7 +81,7 @@ div {
     background-color: #E36588;
     color: white;; 
     font-size: 2em;
-    width: 300px;
+    max-width: 350px;
     margin: 0 auto;
     margin-top: 20px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
